@@ -1,0 +1,7 @@
+{
+  "name": "geo-gouv",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
