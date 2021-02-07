@@ -44,7 +44,6 @@ export default {
   },
   mounted() {
     this.$bus.on("sendResultRegion", (result) => {
-      console.log(result);
       this.departments = result;
     });
   },

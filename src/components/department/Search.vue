@@ -88,7 +88,6 @@ export default {
       return comparison;
     },
     submitDepartment() {
-      console.log("changemeeeeent !!!", this.inputDepartment);
       axios
         .get(
           `https://geo.api.gouv.fr/departements/${this.inputDepartment}/communes`

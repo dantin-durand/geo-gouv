@@ -17,7 +17,7 @@
   <ion-content
     class="ion-padding"
     :scroll-events="true"
-    @ionScrollStart="test()"
+    @ionScrollStart="logScrollingStart()"
     @ionScroll="logScrolling($event)"
   >
     <ion-grid>
@@ -136,12 +136,11 @@ export default {
   },
 
   methods: {
-    test() {
+    logScrollingStart() {
       const headerModal = document.getElementById("header-modal");
       headerModal.classList.add("title-modal-onscroll");
     },
     logScrolling(e) {
-      console.log(e.detail.scrollTop);
       const headerModal = document.getElementById("header-modal");
       if (e.detail.scrollTop <= 0) {
         headerModal.classList.remove("title-modal-onscroll");

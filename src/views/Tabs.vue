@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-tabs>
-      <ion-tab-bar slot="bottom">
+      <ion-tab-bar>
         <ion-tab-button tab="home" href="/home">
           <ion-icon :icon="home" />
           <ion-label>Accueil</ion-label>

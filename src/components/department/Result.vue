@@ -44,7 +44,6 @@ export default {
   },
   mounted() {
     this.$bus.on("sendResultDepartment", (result) => {
-      console.log(result);
       this.departments = result;
     });
   },
